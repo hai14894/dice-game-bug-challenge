@@ -1,14 +1,14 @@
 import React from 'react';
 
-export const YourResult = (props) => {
-  const { one, two, three, four, five, six, yourChoice } = props.allstates;
+const YourResult = (props) => {
+  const { one, two, three, four, five, six, yourChoice } = props.allStates;
   if (yourChoice === 1) {
     return (
       <div className="result">
         <div>You:</div> <img alt="dice" width="50%" src={one} />
       </div>
     );
-  } else if (yourChoice == 2) {
+  } else if (yourChoice === 2) {
     return (
       <div className="result">
         <div>You:</div> <img alt="dice" width="50%" src={two} />
@@ -42,3 +42,4 @@ export const YourResult = (props) => {
     return null;
   }
 };
+export default YourResult

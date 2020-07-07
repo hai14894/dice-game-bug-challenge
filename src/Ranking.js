@@ -36,3 +36,4 @@ const Ranking = (props) => {
     return null;
   }
 };
+export default Ranking

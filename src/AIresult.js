@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const AIresult = (props) => {
-  const { one, two, three, four, five, six, AIChoice } = props.allstates;
+const AIresult = (props) => {
+  const { one, two, three, four, five, six, AIChoice } = props.allStates;
   if (AIChoice === 1) {
     return (
       <div className="result">
@@ -42,3 +42,4 @@ export const AIresult = (props) => {
     return null;
   }
 };
+export default AIresult
